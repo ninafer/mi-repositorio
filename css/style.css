@@ -1,0 +1,562 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 0 50px;
+}
+header{
+    position: sticky;
+    top: 0;
+}
+.mainIndex{
+    padding: 0 250px;
+}
+
+/* ESTILO DEL NAV */
+nav{
+    color: black;
+    background-color: lightpink;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.botonesDerecha{
+    text-align: right;
+}
+
+/* MENU DESPEGABLE */
+.labelMenu {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    line-height: 50px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.navMenu{
+    position: fixed;
+    height: 0vh;
+    width: 30%;
+    background-image:linear-gradient(to right, lightpink, white);
+    border-radius: 5px;
+    text-align: center;
+    transition: all .5%;
+}
+
+.navMenu li {
+    display: none;
+    line-height: 50px;
+    transition: all .5%;
+}
+
+.navMenu li a{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 16px;
+    
+}
+
+.navMenu li a.active, .navMenu li a:hover{
+    color: white;
+    transition: .3s;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ .navMenu{
+    height: 40vh;
+}
+
+#check:checked ~ .navMenu li{
+    display: block;
+}
+
+/* BOTONES DERECHA */
+.miCuenta {
+    color: black;
+    background-color:lightpink;
+    border-bottom: 0;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    margin-right: 50px;
+}
+
+.carroDeCompras{
+    color: black;
+    background-color:lightpink;
+    border-bottom: 0;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+
+/* INICIO */
+#titulo{ 
+    color:lightpink;
+    background-position: 50%;
+    font-family: 'Bangers', cursive;
+    font-size: 7rem;
+    text-align: center;
+    margin-top: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+}
+
+li{
+    list-style-type: none;
+}
+
+.articulos{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.fotoColumna{
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 2%;
+}
+
+
+.imagenCollares{
+    width: 100%;
+/* margin-left: 20%; */
+    /* height: 600px; */
+}
+
+.imagenPulseras{
+    width: 65%;
+    /* height: 300px; */
+}
+
+.imagenAros{
+    width: 65%;
+    /* height: 300px; */
+}
+
+.item1, .item2, .item3{
+    text-align: center;
+}
+
+.contacto{
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+}
+
+.contactos{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.camion{
+    width: 90px;
+    text-align: center;
+}
+
+.newsletter{
+    color: lightseagreen;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 150px;
+}
+
+.email{
+    text-align: center;
+}
+
+#mail{
+    width: 300px;
+}
+
+#enviar{
+    background-color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: medium;
+    border: 0;
+}
+
+footer{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 100px;
+    margin-block-end: 50px;
+}
+
+/* CONTACTOS */
+.volverMenu{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#contacto{
+    color: lightseagreen;
+    font-family: 'Amatic SC', cursive;
+    text-align: left;
+    font-size: 3rem;
+    margin-top: 50px;
+    padding: 50px 0;
+}
+.form{
+    border: 2;
+    border-color: lightsalmon;
+    border-style: dashed;
+    border-radius: 7px;
+    width: 10%;
+}
+
+.fieldset{
+    display: flex;
+    flex-flow: column;
+    width: fit-content;
+    align-content: space-around;
+}
+
+.formulario{
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.campo{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 7%;
+}
+
+.textarea{
+    margin-top: 10%;
+}
+
+.enviar{
+    margin-top: 20%;
+    margin-right: 20%;
+    background-color: lightsalmon;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    width: 30%;
+    border-radius: 4px;
+}
+
+.borrar{
+    margin-top: 20%;
+    margin-right: 10%;
+    background-color: lightsalmon;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    width: 30%;
+    border-radius: 4px;
+}
+
+.cierreFormulario{
+    display: flex;
+    flex-flow: row;
+}
+
+/* IMAGEN PAGINA CONTACTOS */
+.imagenContacto{
+    width: 30%;
+    margin-left: 800px;
+    margin-top: -700px;
+}
+
+/* ARTICULOS */
+
+.title{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 50px;
+}
+.imgCollares, .imgPulceras, .imgAros{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.container{
+    flex-direction: column;
+    margin-top: 10%;
+    margin-left: 2%;
+}
+
+.name{
+    color: black;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+}
+
+.description{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+}
+.price{
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+.buy{
+    border-radius: 4px;
+    background-color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+.imgPenelope{
+    width: 100%;
+}
+.imgRufina{
+    width: 80%;
+}
+.imgSelva{
+    width: 80%;
+    margin-top: 5%;
+}
+
+.imgAzul{
+    width: 100%;
+}
+.imgAntonella{
+    width: 80%;
+    margin-top: 5%;
+}
+.imgVictoria{
+    width: 80%;
+    margin-top: 2%;
+}
+.imgDiana{
+    width: 80%;
+    margin-top: 10%;
+}
+.imgZoe{
+    width: 80%;
+    margin-top: 2%;
+}
+.imgThyara{
+    width: 100%;
+}
+
+
+/* APLICO GRID AL INDEX */
+.gridPadre{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "titulo titulo titulo"
+    "mainArt mainArt mainArt"
+    "footer footer footer";
+}
+
+header{
+    grid-area: header;
+}
+
+#titulo{
+    grid-area: titulo;
+}
+
+.mainArt{
+    grid-area: mainArt;
+}
+
+footer{
+    grid-area: footer;
+}
+
+/* APLICO GRID A CONTACTOS */
+.gridPadreContacto{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "mainContacto mainContacto mainContacto"
+    "footer footer footer";
+}
+
+header{
+    grid-area: header;
+}
+
+.mainContacto{
+    grid-area: mainContacto;
+}
+
+footer{
+    grid-area: footer;
+}
+
+/* APLICO GRID A ARTICULOS */
+.gridArticulos{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer" ;
+}
+
+header{
+    grid-area: header;
+}
+
+.mainArt{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+@media screen and (max-width:400px) { 
+
+    .gridPadre, .gridPadreContacto, .gridArticulos{
+        padding: 0;
+        margin: 0;
+    }
+    .mainIndex, .mainContacto, .mainArt{
+        padding: 0;
+        margin: 0;
+    }
+    /* APLICO GRID A INDEX */
+    .articulos{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "titulo"
+        "imagenCollares"
+        "imagenPulseras"
+        "imagenAros"
+        "contactos"
+        "blog";
+    }
+    .item1{
+        grid-area: imagenCollares;
+    } 
+    .item2{
+        grid-area: imagenPulseras;
+    }
+    .item3{
+        grid-area: imagenAros;
+    }
+    #titulo {
+        font-size: 6rem;
+    }
+    .imagenCollares{
+        width: 60%;
+    }
+    .title{
+        text-align: left;
+        font-size: 2rem;
+    }
+    /* APLICO GRID A COLLARES */
+    .imgCollares{
+        display: grid;
+        grid-template-areas: 
+        "rufina"
+        "selva"
+        "penelope";
+    }
+    .rufina{
+        grid-area: rufina;
+    }
+    .selva{
+        grid-area: selva;
+    }
+    .penelope{
+        grid-area: penelope;
+    }
+    /* APLICO GRID A PULSERAS */
+    .imgPulceras{
+        display: grid;
+        grid-template-areas: 
+        "azul"
+        "antonella"
+        "victoria"
+        ;
+    }
+    .azul{
+        grid-area: azul;
+    }
+    .antonella{
+        grid-area: antonella;
+    }
+    .victoria{
+        grid-area: victoria;
+    }
+    /* APLICO GRID A AROS */
+    .imgAros{
+        display: grid;
+        grid-template-areas: 
+        "diana"
+        "zoe"
+        "thyara";
+    }
+    .diana{
+        grid-area: diana;
+    }
+    .zoe{
+        grid-area: zoe;
+    }
+    .thyara{
+        grid-area: thyara;
+    }
+    .volverMenu{
+        display: none;
+    }
+    .imagenContacto{
+        display: none;
+    }
+    .imgPenelope{
+        margin-top: 3%;
+        width: 50%;
+    }
+    .penelope{
+        margin-left: 2%;
+    }
+    .imgAzul{
+        width: 50%;
+    }
+    .azul, .thyara{
+        margin-top: 5%;
+        margin-left: 2%;
+    }
+    .victoria{
+        margin-top: 10%;
+    }
+    .imgZoe, .imgDiana, .imgThyara{
+        width: 50%;
+    }
+    .form{
+        width: 90%;
+    }
+    .textarea{
+        width: 100%;
+    }
+}
