@@ -472,12 +472,13 @@ footer{
         width: 60%;
     }
     .title{
-        text-align: left;
+        text-align: center;
         font-size: 2rem;
     }
     /* APLICO GRID A COLLARES */
     .imgCollares{
         display: grid;
+        text-align: center;
         grid-template-areas: 
         "rufina"
         "selva"
@@ -495,6 +496,7 @@ footer{
     /* APLICO GRID A PULSERAS */
     .imgPulceras{
         display: grid;
+        text-align: center;
         grid-template-areas: 
         "azul"
         "antonella"
@@ -513,6 +515,7 @@ footer{
     /* APLICO GRID A AROS */
     .imgAros{
         display: grid;
+        text-align: center;
         grid-template-areas: 
         "diana"
         "zoe"
@@ -537,15 +540,11 @@ footer{
         margin-top: 3%;
         width: 50%;
     }
-    .penelope{
-        margin-left: 2%;
-    }
     .imgAzul{
         width: 50%;
     }
     .azul, .thyara{
         margin-top: 5%;
-        margin-left: 2%;
     }
     .victoria{
         margin-top: 10%;
