@@ -15,90 +15,11 @@ header{
 }
 
 /* ESTILO DEL NAV */
-nav{
-    color: black;
-    background-color: lightpink;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
+.costum{
+    background-image:linear-gradient(to right, rgb(252, 173, 173), rgb(255, 220, 220));
 }
-
-.botonesDerecha{
-    text-align: right;
-}
-
-/* MENU DESPEGABLE */
-.labelMenu {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin-left: 20px;
-    line-height: 50px;
-    text-align: center;
-    user-select: none;
-    cursor: pointer;
-}
-
-.navMenu{
-    position: fixed;
-    height: 0vh;
-    width: 30%;
-    background-image:linear-gradient(to right, lightpink, white);
-    border-radius: 5px;
-    text-align: center;
-    transition: all .5%;
-}
-
-.navMenu li {
-    display: none;
-    line-height: 50px;
-    transition: all .5%;
-}
-
-.navMenu li a{
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
-    font-size: 16px;
-    
-}
-
-.navMenu li a.active, .navMenu li a:hover{
-    color: white;
-    transition: .3s;
-}
-
-#check{
-    display: none;
-}
-
-#check:checked ~ .navMenu{
-    height: 40vh;
-}
-
-#check:checked ~ .navMenu li{
-    display: block;
-}
-
-/* BOTONES DERECHA */
-.miCuenta {
-    color: black;
-    background-color:lightpink;
-    border-bottom: 0;
-    border: 0;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
-    margin-right: 50px;
-}
-
-.carroDeCompras{
-    color: black;
-    background-color:lightpink;
-    border-bottom: 0;
-    border: 0;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
-    margin-right: 20px;
+.tamLogo{
+    width: 80px;
 }
 
 /* INICIO */
@@ -114,9 +35,13 @@ nav{
 a{
     text-decoration: none;
     color: black;
-    font-weight: bold;
     text-transform: uppercase;
-    font-family: 'Playfair Display', serif;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.anclaArt:hover{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 li{
@@ -159,7 +84,7 @@ li{
 
 .contacto{
     display: inline-block;
-    font-family: 'Playfair Display', serif;
+    font-family:Arial, Helvetica, sans-serif;
     text-transform: uppercase;
 }
 
