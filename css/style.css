@@ -133,12 +133,6 @@ footer{
 }
 
 /* CONTACTOS */
-.volverMenu{
-    display: flex;
-    justify-content:space-evenly;
-    align-items: center;
-    margin-top: 50px;
-}
 
 #contacto{
     color: lightseagreen;
@@ -385,9 +379,6 @@ footer{
     }
     .thyara{
         grid-area: thyara;
-    }
-    .volverMenu{
-        display: none;
     }
     .imagenContacto{
         display: none;
