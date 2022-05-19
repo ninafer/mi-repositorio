@@ -69,18 +69,18 @@ li{
 
 .imagenCollares{
     width: 100%;
-/* margin-left: 20%; */
-    /* height: 600px; */
+    margin-left: 20%;
+    height: 600px; 
 }
 
 .imagenPulseras{
     width: 65%;
-    /* height: 300px; */
+    height: 300px;
 }
 
 .imagenAros{
     width: 65%;
-    /* height: 300px; */
+    height: 300px;
 }
 
 .item1, .item2, .item3{
@@ -143,7 +143,7 @@ footer{
 /* CONTACTOS */
 
 #contacto{
-    color: lightseagreen;
+    color: white;
     font-family: 'Amatic SC', cursive;
     text-align: left;
     font-size: 3rem;
@@ -151,11 +151,12 @@ footer{
     padding: 50px 0;
 }
 .form{
+    background-color: #f2e2e2;
     border: 2;
     border-color: lightsalmon;
     border-style: dashed;
     border-radius: 7px;
-    width: 10%;
+    width: 40%;
 }
 
 .fieldset{
@@ -163,6 +164,7 @@ footer{
     flex-flow: column;
     width: fit-content;
     align-content: space-around;
+    margin-left: 9%;
 }
 
 .formulario{
@@ -185,8 +187,9 @@ footer{
 
 .enviar{
     margin-top: 20%;
+    margin-left: 9%;
     margin-right: 20%;
-    background-color: lightsalmon;
+    background-color: #d7a9a9;
     font-family: 'Montserrat', sans-serif;
     color: black;
     width: 30%;
@@ -196,7 +199,7 @@ footer{
 .borrar{
     margin-top: 20%;
     margin-right: 10%;
-    background-color: lightsalmon;
+    background-color:#d7a9a9;
     font-family: 'Montserrat', sans-serif;
     color: black;
     width: 30%;
@@ -206,6 +209,7 @@ footer{
 .cierreFormulario{
     display: flex;
     flex-flow: row;
+    margin-bottom: 3%;
 }
 
 /* IMAGEN PAGINA CONTACTOS */
