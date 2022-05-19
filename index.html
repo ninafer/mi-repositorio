@@ -19,9 +19,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="imagenes/favicon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
@@ -31,7 +31,8 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light costum">
             <div class="container-fluid fuentes">
-                <a class="navbar-nav" href="index.html"><img class="tamLogo" src="imagenes/favicon.jpg" alt="Inicio"></a>
+                <a class="navbar-nav" href="index.html"><img class="tamLogo" src="imagenes/favicon.jpg"
+                        alt="Inicio"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -58,7 +59,7 @@
                         <li class="nav-item">
                             <a class="nav-link fuentes" href="#"> Mi Carrito</a>
                         </li>
-                        </ul>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -68,21 +69,21 @@
         <!-- Aqui va aun carrusel de imagenes de la marca -->
         <ul class="articulos">
             <div class="item1">
-                <img class="imagenCollares" src="imagenes/portadaCollares.jpg" alt="collares">
+                <img class="imagenCollares img-thumbnail" src="imagenes/portadaCollares.jpg" alt="collares">
                 <li><a class="anclaArt" href="paginas/collares.html">Collares</a></li>
             </div>
             <div class="fotoColumna">
                 <div class="item2">
-                    <img class="imagenPulseras" src="imagenes/portadaPulseras.jpg" alt="pulseras">
+                    <img class="imagenPulseras img-thumbnail" src="imagenes/portadaPulseras.jpg" alt="pulseras">
                     <li><a class="anclaArt" href="paginas/pulseras.html">Pulseras</a></li>
                 </div>
                 <div class="item3">
-                    <img class="imagenAros" src="imagenes/portadaAros.jpg" alt="aros">
+                    <img class="imagenAros img-thumbnail" src="imagenes/portadaAros.jpg" alt="aros">
                     <li><a class="anclaArt" href="paginas/aros.html">Aros</a></li>
                 </div>
             </div>
         </ul>
-        <div>
+        <div class="fondoContactos">
             <ul class="contactos">
                 <div class="camion">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -108,8 +109,10 @@
                     <li class="contacto"><a class="anclaArt" href="paginas/contactos.html">Contacto</a></li>
                 </div>
             </ul>
-        </div class="blog">
-        <h2 class="newsletter">Suscribite a nuestro Newsletter</h2>
+        </div>
+        <div class="blog">
+            <h2 class="newsletter">Suscribite a nuestro Newsletter</h2>
+        </div>
         <div class="email">
             <input id="mail" type="email" placeholder="Email">
             <input id="enviar" type="submit">

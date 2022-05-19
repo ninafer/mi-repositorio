@@ -39,6 +39,10 @@ a{
     text-transform: uppercase;
     font-family:Arial, Helvetica, sans-serif;
 }
+.anclaArt{
+    background-color: #f2e2e2;
+    border-radius: 4px;
+}
 .anclaArt:hover{
     color: black;
     font-size: 1.5rem;
@@ -91,18 +95,21 @@ li{
 
 .contactos{
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-around;
     align-items: center;
     margin-top: 150px;
 }
-
+.fondoContactos{
+    background-color: #f2e2e2;
+    border-radius: 8px;
+}
 .camion{
     width: 90px;
     text-align: center;
 }
 
 .newsletter{
-    color: lightseagreen;
+    color: white;
     font-family: 'Amatic SC', cursive;
     text-align: center;
     font-size: 3rem;
@@ -120,7 +127,7 @@ li{
 #enviar{
     background-color: white;
     font-family: 'Amatic SC', cursive;
-    font-size: medium;
+    font-size: large;
     border: 0;
 }
 
