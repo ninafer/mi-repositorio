@@ -16,7 +16,7 @@ header{
 
 /* ESTILO DEL NAV */
 .costum{
-    background-image:linear-gradient(to right, rgb(252, 173, 173), rgb(255, 220, 220));
+    background-image:linear-gradient(to right,#d7a9a9,#e5c5c5,#f2e2e2);
 }
 .tamLogo{
     width: 80px;
@@ -24,10 +24,10 @@ header{
 
 /* INICIO */
 #titulo{ 
-    color:lightpink;
+    color:#d7a9a9;
     background-position: 50%;
     font-family: 'Bangers', cursive;
-    font-size: 7rem;
+    font-size: 8rem;
     text-align: center;
     margin-top: 50px;
 }
