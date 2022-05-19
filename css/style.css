@@ -53,40 +53,11 @@ a{
 li{
     list-style-type: none;
 }
-
-.articulos{
-    display: flex;
-    justify-content:space-evenly;
-    align-items: center;
-    margin-top: 50px;
+.positionCarousel{
+    margin-top: 130px;
+    margin-bottom: 100px;
 }
 
-.fotoColumna{
-    flex-direction: column;
-    margin-top: 20px;
-    margin-left: 2%;
-}
-
-
-.imagenCollares{
-    width: 100%;
-    margin-left: 20%;
-    height: 600px; 
-}
-
-.imagenPulseras{
-    width: 65%;
-    height: 300px;
-}
-
-.imagenAros{
-    width: 65%;
-    height: 300px;
-}
-
-.item1, .item2, .item3{
-    text-align: center;
-}
 
 .contacto{
     display: inline-block;
@@ -229,7 +200,6 @@ footer{
     font-size: 4rem;
     text-transform: uppercase;
     margin-top: 50px;
-    margin-bottom: 50px;
 }
 
 .container{
