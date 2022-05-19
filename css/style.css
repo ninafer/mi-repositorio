@@ -5,6 +5,7 @@
 
 body{
     padding: 0 50px;
+    background-image:url(../imagenes/fondo2.jpg);
 }
 header{
     position: sticky;
