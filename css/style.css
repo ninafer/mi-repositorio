@@ -6,6 +6,7 @@
 body{
     padding: 0 50px;
     background-image:url(../imagenes/fondo2.jpg);
+    background-attachment: fixed;
 }
 header{
     position: sticky;
@@ -118,77 +119,45 @@ footer{
     color: white;
     font-family: 'Amatic SC', cursive;
     text-align: left;
-    font-size: 3rem;
+    font-size: 5rem;
     margin-top: 50px;
     padding: 50px 0;
 }
-.form{
-    background-color: #f2e2e2;
-    border: 2;
-    border-color: lightsalmon;
-    border-style: dashed;
-    border-radius: 7px;
-    width: 40%;
-}
-
-.fieldset{
-    display: flex;
-    flex-flow: column;
-    width: fit-content;
-    align-content: space-around;
-    margin-left: 9%;
-}
-
-.formulario{
-    color: black;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.campo{
-    color: black;
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 7%;
-}
-
-.textarea{
-    margin-top: 10%;
-}
-
-.enviar{
-    margin-top: 20%;
-    margin-left: 9%;
-    margin-right: 20%;
-    background-color: #d7a9a9;
-    font-family: 'Montserrat', sans-serif;
-    color: black;
-    width: 30%;
-    border-radius: 4px;
-}
-
-.borrar{
-    margin-top: 20%;
-    margin-right: 10%;
+form{
+    width: 500px;
     background-color:#d7a9a9;
-    font-family: 'Montserrat', sans-serif;
-    color: black;
-    width: 30%;
-    border-radius: 4px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    border-radius: 7px;
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    border: none;
 }
 
-.cierreFormulario{
-    display: flex;
-    flex-flow: row;
-    margin-bottom: 3%;
+textarea{
+    min-height: 200px;
+    max-height: 200px;
+    max-width: 100%;
+}
+#boton{
+    background-color: #e5c5c5;
+}
+#boton:hover{
+    cursor:pointer;
+    transform: translate(-5px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0.2, 0.2);
 }
 
 /* IMAGEN PAGINA CONTACTOS */
 .imagenContacto{
-    width: 30%;
+    width: 350px;
     margin-left: 800px;
-    margin-top: -700px;
+    margin-top: -500px;
 }
 
 /* ARTICULOS */
@@ -249,78 +218,7 @@ footer{
     font-family: Arial, Helvetica, sans-serif
 }
 
-
-/* .imgCollares, .imgPulceras, .imgAros{
-    display: flex;
-    justify-content:space-evenly;
-    align-items: center;
-}
-
-.container{
-    flex-direction: column;
-    margin-top: 10%;
-    margin-left: 2%;
-}
-
-.name{
-    color: black;
-    font-family: 'Playfair Display', serif;
-    text-transform: uppercase;
-}
-
-.description{
-    color: black;
-    font-family: 'Poppins', sans-serif;
-    margin-top: 10px;
-}
-.price{
-    margin-top: 15px;
-    font-size: 1rem;
-}
-
-.buy{
-    border-radius: 4px;
-    background-color: white;
-    font-family: 'Playfair Display', serif;
-}
-.penelope{
-    width: 50%;
-    margin-right: 10%;
-}
-.Rufina{
-    width: 60%;
-}
-.Selva{
-    width: 60%;
-    margin-top: 30%;
-}
-.imgSelva{
-    margin-top: 10%;
-}
-.imgAzul{
-    width: 100%;
-}
-.imgAntonella{
-    width: 80%;
-    margin-top: 5%;
-}
-.imgVictoria{
-    width: 80%;
-    margin-top: 2%;
-}
-.imgDiana{
-    width: 80%;
-    margin-top: 10%;
-}
-.imgZoe{
-    width: 80%;
-    margin-top: 2%;
-}
-.imgThyara{
-    width: 100%;
-} */
-
-@media screen and (max-width:400px) { 
+@media screen and (max-width:900px) { 
 
     .gridPadre, .gridPadreContacto, .gridArticulos{
         padding: 0;
@@ -334,111 +232,44 @@ footer{
     .articulos{
         display: grid;
         grid-template-areas: 
-        "header"
+        "nav"
         "titulo"
-        "imagenCollares"
-        "imagenPulseras"
-        "imagenAros"
+        "imagenCarousel"
         "contactos"
         "blog";
     }
-    .item1{
-        grid-area: imagenCollares;
+    nav{
+        grid-area: nav;
     } 
-    .item2{
-        grid-area: imagenPulseras;
+    .positionCarousel{
+        grid-area: imagenCarousel;
+        width: 80%;
+        margin-left: 10%;
+    } 
+    .fondoContactos{
+        grid-area: contactos;
+        width: 80%;
+        margin-left: 10%;
     }
-    .item3{
-        grid-area: imagenAros;
+    .blog{
+        grid-area: blog;
     }
+
     #titulo {
-        font-size: 6rem;
-    }
-    .imagenCollares{
-        width: 60%;
+        font-size: 4rem;
     }
     .title{
         text-align: center;
         font-size: 2rem;
     }
-    /* APLICO GRID A COLLARES */
-    .imgCollares{
-        display: grid;
-        text-align: center;
-        grid-template-areas: 
-        "rufina"
-        "selva"
-        "penelope";
-    }
-    .rufina{
-        grid-area: rufina;
-    }
-    .selva{
-        grid-area: selva;
-    }
-    .penelope{
-        grid-area: penelope;
-    }
-    /* APLICO GRID A PULSERAS */
-    .imgPulceras{
-        display: grid;
-        text-align: center;
-        grid-template-areas: 
-        "azul"
-        "antonella"
-        "victoria"
-        ;
-    }
-    .azul{
-        grid-area: azul;
-    }
-    .antonella{
-        grid-area: antonella;
-    }
-    .victoria{
-        grid-area: victoria;
-    }
-    /* APLICO GRID A AROS */
-    .imgAros{
-        display: grid;
-        text-align: center;
-        grid-template-areas: 
-        "diana"
-        "zoe"
-        "thyara";
-    }
-    .diana{
-        grid-area: diana;
-    }
-    .zoe{
-        grid-area: zoe;
-    }
-    .thyara{
-        grid-area: thyara;
-    }
+} 
+    /* APLICO RESPONSIVE A CONTACTOS */
+    @media screen and (max-width:900px){
+
     .imagenContacto{
         display: none;
     }
-    .imgPenelope{
-        margin-top: 3%;
-        width: 50%;
-    }
-    .imgAzul{
-        width: 50%;
-    }
-    .azul, .thyara{
-        margin-top: 5%;
-    }
-    .victoria{
-        margin-top: 10%;
-    }
-    .imgZoe, .imgDiana, .imgThyara{
-        width: 50%;
-    }
-    .form{
-        width: 90%;
-    }
-    .textarea{
+    form{
         width: 100%;
     }
 }
