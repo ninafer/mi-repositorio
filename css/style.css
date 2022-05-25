@@ -34,7 +34,6 @@ header{
     text-align: center;
     margin-top: 50px;
 }
-
 a{
     text-decoration: none;
     color: black;
@@ -50,7 +49,6 @@ a{
     font-size: 1.5rem;
     font-weight: bold;
 }
-
 li{
     list-style-type: none;
 }
@@ -58,14 +56,11 @@ li{
     margin-top: 130px;
     margin-bottom: 100px;
 }
-
-
 .contacto{
     display: inline-block;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
 }
-
 .contactos{
     display: flex;
     justify-content:space-around;
@@ -80,7 +75,6 @@ li{
     width: 90px;
     text-align: center;
 }
-
 .newsletter{
     color: white;
     font-family: 'Amatic SC', cursive;
@@ -88,22 +82,19 @@ li{
     font-size: 3rem;
     margin-top: 150px;
 }
-
 .email{
     text-align: center;
 }
-
 #mail{
     width: 300px;
 }
-
 #enviar{
     background-color: white;
     font-family: 'Amatic SC', cursive;
     font-size: large;
     border: 0;
+    width: 50px;
 }
-
 footer{
     font-family: 'Montserrat', sans-serif;
     color: black;
@@ -114,7 +105,6 @@ footer{
 }
 
 /* CONTACTOS */
-
 #contacto{
     color: white;
     font-family: 'Amatic SC', cursive;
@@ -138,7 +128,6 @@ input, textarea{
     box-sizing: border-box;
     border: none;
 }
-
 textarea{
     min-height: 200px;
     max-height: 200px;
@@ -161,7 +150,6 @@ textarea{
 }
 
 /* ARTICULOS */
-
 .title{
     color: black;
     font-family: 'Poppins', sans-serif;
@@ -170,7 +158,6 @@ textarea{
     text-transform: uppercase;
     margin-top: 50px;
 }
-
 .container{
     width: 100%;
     max-width: 1200px;
@@ -217,8 +204,8 @@ textarea{
     background-color: white; 
     font-family: Arial, Helvetica, sans-serif
 }
-
-@media screen and (max-width:900px) { 
+    /* APLICO RESPONSIVE */
+    @media screen and (max-width:900px) { 
 
     .gridPadre, .gridPadreContacto, .gridArticulos{
         padding: 0;
@@ -251,10 +238,12 @@ textarea{
         width: 80%;
         margin-left: 10%;
     }
+    .contactos{
+        max-width: 90%;
+    }
     .blog{
         grid-area: blog;
     }
-
     #titulo {
         font-size: 4rem;
     }
@@ -263,6 +252,7 @@ textarea{
         font-size: 2rem;
     }
 } 
+
     /* APLICO RESPONSIVE A CONTACTOS */
     @media screen and (max-width:900px){
 
