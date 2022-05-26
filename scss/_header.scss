@@ -1,0 +1,20 @@
+header{
+    nav{
+        position: sticky;
+        top: 0;
+        z-index: 3000;
+        background-image:linear-gradient(to right,#d7a9a9,#e5c5c5,#f2e2e2);
+        .tamLogo{
+            width: 80px;
+        }
+        li{
+            list-style-type: none;
+            a{
+                text-decoration: none;
+                color: black;
+                text-transform: uppercase;
+                font-family: $monserrat;
+            }
+        }
+    } 
+}

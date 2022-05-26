@@ -1,0 +1,56 @@
+.positionCarousel{
+    margin-top: 130px;
+    margin-bottom: 100px;
+}
+.fondoContactos{
+    background-color: $color-contactos;
+    border-radius: 8px;
+    .contactos{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        margin-top: 150px;
+        .contacto{
+            display: inline-block;
+            font-family: $monserrat;
+            text-transform: uppercase;
+            .anclaArt{
+                background-color: $color-contactos;
+                border-radius: 4px;
+                text-decoration: none;
+                color: black;
+                &:hover{
+                    color: black;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                }
+            }
+        }    
+        .camion{
+            width: 90px;
+            text-align: center;
+        }   
+    }
+}
+.blog{
+    .newsletter{
+        color: white;
+        font-family: $amatic;
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 150px;        
+        }
+    .email{
+        text-align: center;
+            #mail{
+                width: 300px;
+        }        
+    #enviar{
+    background-color: white;
+    font-family: $amatic;
+    font-size: large;
+    border: 0;
+    width: 50px;
+    }
+    }        
+}

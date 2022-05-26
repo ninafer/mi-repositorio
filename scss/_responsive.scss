@@ -1,0 +1,52 @@
+@media screen and (max-width:900px) { 
+
+    .gridPadre, .gridPadreContacto, .gridArticulos{
+        padding: 0;
+        margin: 0;
+    }
+    .mainIndex, .mainContacto, .mainArt{
+        padding: 0;
+        margin: 0;
+    }
+    /* APLICO GRID A INDEX */
+    .articulos{
+        display: grid;
+        grid-template-areas: 
+        "nav"
+        "titulo"
+        "imagenCarousel"
+        "blog";
+    }
+    nav{
+        grid-area: nav;
+        width: 100%;
+    }
+    .positionCarousel{
+        grid-area: imagenCarousel;
+        width: 100%;
+        margin-left: 10%;
+    } 
+    .fondoContactos{
+        display: none;
+    }
+    .blog{
+        grid-area: blog;
+    }
+    .tituloIndex {
+        font-size: 4rem;
+    }
+    .title{
+        text-align: center;
+        font-size: 2rem;
+    }
+} 
+
+    /* APLICO RESPONSIVE A CONTACTOS */
+    @media screen and (max-width:900px){
+    .imagenContacto{
+        display: none;
+    }
+    form{
+        width: 100%;
+    }
+}
