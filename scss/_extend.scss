@@ -1,0 +1,13 @@
+.tituloIndex{
+    color:#d7a9a9;
+    background-position: 50%;
+    font-family: 'Bangers', cursive;
+    font-size: 8rem;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.title{
+    @extend .tituloIndex;
+    text-decoration: underline;
+}

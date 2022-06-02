@@ -1,0 +1,17 @@
+
+$mapContactos:(camion: brown, telefono: yellow, sobre: violet);
+
+@each $contactos, $colorContactos in $mapContactos{
+    .#{$contactos} {
+        color: $colorContactos;
+
+    }
+}
+
+$estilo: (color:pink,tamFuente:4rem);
+
+.piePagina {
+    background-color: map-get($estilo,color);
+    font-size: map-get($estilo,tamFuente);
+    
+}

@@ -32,7 +32,7 @@ footer {
   margin-top: 100px;
   margin-block-end: 50px; }
 
-.tituloIndex {
+.tituloIndex, .title {
   color: #d7a9a9;
   background-position: 50%;
   font-family: 'Bangers', cursive;
@@ -203,7 +203,7 @@ textarea {
     display: none; }
   .blog {
     grid-area: blog; }
-  .tituloIndex {
+  .tituloIndex, .title {
     font-size: 4rem; }
   .title {
     text-align: center;
@@ -215,3 +215,38 @@ textarea {
     display: none; }
   form {
     width: 100%; } }
+
+.camion {
+  color: brown; }
+
+.telefono {
+  color: yellow; }
+
+.sobre {
+  color: violet; }
+
+.piePagina {
+  background-color: pink;
+  font-size: 4rem; }
+
+.tituloIndex, .title {
+  color: #d7a9a9;
+  background-position: 50%;
+  font-family: 'Bangers', cursive;
+  font-size: 8rem;
+  text-align: center;
+  margin-top: 50px; }
+
+.title {
+  text-decoration: underline; }
+
+form {
+  width: 500px;
+  background-color: lightgreen;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  border-radius: 7px; }
+
+#boton {
+  background-color: grey; }
