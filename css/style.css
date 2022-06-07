@@ -272,3 +272,38 @@ textarea {
     max-width: 90%; }
   .card p {
     padding: 5% !important; } }
+
+@media screen and (min-device-width: 500px) and (max-device-width: 900px) {
+  * {
+    padding: 0 !important; }
+  .contactos {
+    margin-top: 0; }
+    .contactos .iconos {
+      width: 50px; }
+    .contactos .iconoWhatsapp {
+      width: 50px; }
+    .contactos .contacto {
+      font-size: 1rem; }
+  .tituloIndex {
+    grid-area: titulo;
+    font-size: 4rem; }
+  .subtitulo {
+    font-size: 0,5rem; }
+  .title {
+    text-align: center;
+    font-size: 2rem; }
+  footer .tituloFooter {
+    display: none; }
+  footer .redesSociales {
+    margin-top: 20px; }
+    footer .redesSociales .icono {
+      width: 20px; }
+  footer .piePagina {
+    margin-top: 30px;
+    font-size: 0,5rem; }
+  .botonWhatsapp {
+    display: none; }
+  form {
+    max-width: 90%; }
+  .card p {
+    padding: 5% !important; } }
