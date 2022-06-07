@@ -1,9 +1,8 @@
 header{
-    nav{
         position: sticky;
         top: 0;
         z-index: 3000;
-        background-image:linear-gradient(to right,#d7a9a9,#e5c5c5,#f2e2e2);
+        background-image:linear-gradient(to right,#f8b6b6,#f9c3c3,#fbd6d6);
         .tamLogo{
             width: 80px;
         }
@@ -16,5 +15,4 @@ header{
                 font-family: $monserrat;
             }
         }
-    } 
 }

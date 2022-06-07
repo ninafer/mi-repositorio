@@ -1,56 +1,69 @@
-.positionCarousel{
-    margin-top: 130px;
+.positionCarousel {
+    padding: 0 250px;
+    margin-top: 120px;
     margin-bottom: 100px;
 }
-.fondoContactos{
-    background-color: $color-contactos;
-    border-radius: 8px;
-    .contactos{
-        display: flex;
-        justify-content:space-around;
-        align-items: center;
-        margin-top: 150px;
-        .contacto{
-            display: inline-block;
-            font-family: $monserrat;
-            text-transform: uppercase;
-            .anclaArt{
-                background-color: $color-contactos;
-                border-radius: 4px;
-                text-decoration: none;
+
+.contactos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 150px;
+
+    .contacto {
+        display: inline-flex;
+        font-family: $monserrat;
+        text-transform: uppercase;
+        font-size: 1rem;
+
+        .anclaArt {
+            background-color: $color-contactos;
+            border-radius: 4px;
+            text-decoration: none;
+            color: black;
+
+            &:hover {
                 color: black;
-                &:hover{
-                    color: black;
-                    font-size: 1.2rem;
-                    font-weight: bold;
-                }
+                font-size: 1.2rem;
+                font-weight: bold;
             }
-        }    
-        .camion{
-            width: 90px;
-            text-align: center;
-        }   
+        }
+    }
+    .iconos {
+        width: 100px;
     }
 }
-.blog{
-    .newsletter{
-        color: white;
+
+.blog {
+    background-color: aquamarine;
+    width: 100%;
+    .newsletter {
+        color: black;
         font-family: $amatic;
         text-align: center;
         font-size: 3rem;
-        margin-top: 150px;        
+        margin-top: 100px;
+        .estrella{
+            width: 20px;
         }
-    .email{
-        text-align: center;
-            #mail{
-                width: 300px;
-        }        
-    #enviar{
-    background-color: white;
-    font-family: $amatic;
-    font-size: large;
-    border: 0;
-    width: 50px;
     }
-    }        
+
+    .email {
+        margin-top: 30px;
+        text-align: center;
+
+        #mail {
+            width: 300px;
+            border-radius: 7px;
+        }
+
+        #enviar {
+            background-color: white;
+            font-family: $amatic;
+            font-size: 1rem;
+            border: 0;
+            border-radius: 7px;
+            width: 50px;
+        }
+    }
 }

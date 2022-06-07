@@ -1,8 +1,35 @@
 footer{
+    .linea{
+        border-top: 2px black solid;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        margin-top: 50px;
+        width: 70%;
+    }
+    .piePagina{
     font-family: $monserrat;
     color: black;
     font-size: 1rem;
     text-align: center;
-    margin-top: 100px;
     margin-block-end: 50px;
+    }   
+    .tituloFooter{
+        font-family: 'Poppins', sans-serif;
+        color: black;
+        font-size: 1rem;
+        text-align: center;
+        padding: 20px;
+    }
+    .redesSociales {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding:50px 250px;
+        .icono{
+            width: 30px;
+        }
+
+    }
 }
