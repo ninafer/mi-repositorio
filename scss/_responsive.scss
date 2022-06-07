@@ -1,4 +1,6 @@
-@media screen and (max-width:500px) { 
+/*APLICO RESPONSIVE PARA MOVIL*/
+
+@media screen and (max-width: 500px) { 
     *{
         padding: 0 !important;
     }
@@ -13,6 +15,10 @@
     }
     .positionCarousel{
         grid-area: imagenCarousel;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        width: 100%;
     }
     .contactos{
         grid-area: contactos;
@@ -71,13 +77,19 @@
         }
     }
 } 
+/*APLICO RESPONSIVE PARA TABLET*/
 
-@media screen and (min-device-width: 500px) and (max-device-width: 900px) { 
+@media screen and (min-device-width: 500px) and (max-device-width: 990px) { 
 
     *{
         padding: 0 !important;
     }
-
+    .positionCarousel{
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        width: 100%;
+    }
     .contactos{
         margin-top: 0;
         .iconos{
@@ -87,7 +99,7 @@
             width: 50px;
         }
         .contacto{
-            font-size: 1rem;
+            font-size: 0,5rem;
         }
     }
     .tituloIndex {
