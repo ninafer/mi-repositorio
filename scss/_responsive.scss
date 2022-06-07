@@ -1,52 +1,73 @@
-@media screen and (max-width:900px) { 
-
-    .gridPadre, .gridPadreContacto, .gridArticulos{
-        padding: 0;
-        margin: 0;
-    }
-    .mainIndex, .mainContacto, .mainArt{
-        padding: 0;
-        margin: 0;
+@media screen and (max-width:500px) { 
+    *{
+        padding: 0 !important;
     }
     /* APLICO GRID A INDEX */
-    .articulos{
+    .mainIndex{
         display: grid;
         grid-template-areas: 
-        "nav"
         "titulo"
+        "subtitulo"
         "imagenCarousel"
-        "blog";
-    }
-    nav{
-        grid-area: nav;
-        width: 100%;
+        "contactos";
     }
     .positionCarousel{
         grid-area: imagenCarousel;
-        width: 100%;
-        margin-left: 10%;
-    } 
-    .fondoContactos{
-        display: none;
+    }
+    .contactos{
+        grid-area: contactos;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        .iconos{
+            width: 60px;
+        }
+        .iconoWhatsapp{
+            width: 60px;
+        }
+        .contacto{
+            font-size: 0.5rem;
+        }
     }
     .blog{
-        grid-area: blog;
+        display: none;
     }
     .tituloIndex {
+        grid-area: titulo;
         font-size: 4rem;
+    }
+    .subtitulo{
+        grid-area: subtitulo;
+        font-size: 0,5rem;
     }
     .title{
         text-align: center;
         font-size: 2rem;
     }
-} 
-
-    /* APLICO RESPONSIVE A CONTACTOS */
-    @media screen and (max-width:900px){
-    .imagenContacto{
+    footer{
+        .tituloFooter{
+            display: none;
+        }
+        .redesSociales{
+            margin-top: 20px;
+            .icono{
+                width: 20px;
+            }
+        }
+        .piePagina{
+            margin-top: 30px;
+            font-size: 0,5rem;
+        }
+    }
+    .botonWhatsapp{
         display: none;
     }
-    form{
-        width: 100%;
+    form {
+        max-width: 90%;
     }
-}
+    .card{
+        p{
+            padding: 5%!important;
+        }
+    }
+} 

@@ -8,6 +8,14 @@ body {
 .padreContacto {
   background-color: #bee4be; }
 
+.botonWhatsapp {
+  position: fixed;
+  right: 25px;
+  bottom: 20px;
+  z-index: 999; }
+  .botonWhatsapp .whatsap {
+    width: 60px; }
+
 header {
   position: sticky;
   top: 0;
@@ -178,14 +186,6 @@ textarea {
     transform: translate(-5px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
 
-.botonWhatsapp {
-  position: fixed;
-  right: 25px;
-  bottom: 20px;
-  z-index: 999; }
-  .botonWhatsapp .whatsap {
-    width: 60px; }
-
 .container {
   width: 100%;
   max-width: 1200px;
@@ -226,37 +226,49 @@ textarea {
       background-color: white;
       font-family: Arial, Helvetica, sans-serif; }
 
-@media screen and (max-width: 900px) {
-  .gridPadre, .gridPadreContacto, .gridArticulos {
-    padding: 0;
-    margin: 0; }
-  .mainIndex, .mainContacto, .mainArt {
-    padding: 0;
-    margin: 0; }
+@media screen and (max-width: 500px) {
+  * {
+    padding: 0 !important; }
   /* APLICO GRID A INDEX */
-  .articulos {
+  .mainIndex {
     display: grid;
-    grid-template-areas: "nav" "titulo" "imagenCarousel" "blog"; }
-  nav {
-    grid-area: nav;
-    width: 100%; }
+    grid-template-areas: "titulo" "subtitulo" "imagenCarousel" "contactos"; }
   .positionCarousel {
-    grid-area: imagenCarousel;
-    width: 100%;
-    margin-left: 10%; }
-  .fondoContactos {
-    display: none; }
+    grid-area: imagenCarousel; }
+  .contactos {
+    grid-area: contactos;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0; }
+    .contactos .iconos {
+      width: 60px; }
+    .contactos .iconoWhatsapp {
+      width: 60px; }
+    .contactos .contacto {
+      font-size: 0.5rem; }
   .blog {
-    grid-area: blog; }
+    display: none; }
   .tituloIndex {
+    grid-area: titulo;
     font-size: 4rem; }
+  .subtitulo {
+    grid-area: subtitulo;
+    font-size: 0,5rem; }
   .title {
     text-align: center;
-    font-size: 2rem; } }
-
-/* APLICO RESPONSIVE A CONTACTOS */
-@media screen and (max-width: 900px) {
-  .imagenContacto {
+    font-size: 2rem; }
+  footer .tituloFooter {
+    display: none; }
+  footer .redesSociales {
+    margin-top: 20px; }
+    footer .redesSociales .icono {
+      width: 20px; }
+  footer .piePagina {
+    margin-top: 30px;
+    font-size: 0,5rem; }
+  .botonWhatsapp {
     display: none; }
   form {
-    width: 100%; } }
+    max-width: 90%; }
+  .card p {
+    padding: 5% !important; } }
