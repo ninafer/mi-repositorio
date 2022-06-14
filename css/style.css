@@ -62,6 +62,9 @@ footer {
     padding: 50px 250px; }
     footer .redesSociales .icono {
       width: 30px; }
+      footer .redesSociales .icono:hover {
+        transform: translate(-10px);
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
 
 /*TITULO INDEX*/
 .tituloIndex {
